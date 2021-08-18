@@ -1,41 +1,41 @@
 <html>
 	<head>
 		<script>
-			var key;
-            var repeat;
+			<!-- var key; -->
+            <!-- var repeat; -->
 
-                var _stress = function(duration) {
-                    var msg = '<Apple  encrypted=""false""><RS><ABC>'+
-                        '<Test><T>2021-08-09T17:31:30.748-05:00</T><SP>2500</SP><S>483,504,525,553,588,616,644,672,686,714,735,756,777,784,791,791</S></Test>'+
-                        '<Test><T>2021-08-09T17:31:30.748-05:00</T><SP>2500</SP><S>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</S></Test>'+
-                        '<Test><T>2021-08-09T17:31:30.748-05:00</T><SP>2500</SP><S>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</S></Test>'+
-                        '<Test><T>2021-08-09T17:31:30.748-05:00</T><SP>2500</SP><S>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</S></Test>'+
-                        '<Test><T>2021-08-09T17:31:30.748-05:00</T><SP>2500</SP><S>483,504,525,553,588,616,644,672,686,714,735,756,777,784,791,791</S></Test>'+
-                        '<Test><T>2021-08-09T17:31:30.748-05:00</T><SP>2500</SP><S>483,504,525,553,588,616,644,672,686,714,735,756,777,784,791,791</S></Test>'+
-                        '</ABC><ABC></ABC><DT>2021-08-09T17:31:30.748-05:00</DT><DD>40000</DD></RS></Apple>';
+                <!-- var _stress = function(duration) { -->
+                    <!-- var msg = '<Apple  encrypted=""false""><RS><ABC>'+ -->
+                        <!-- '<Test><T>2021-08-09T17:31:30.748-05:00</T><SP>2500</SP><S>483,504,525,553,588,616,644,672,686,714,735,756,777,784,791,791</S></Test>'+ -->
+                        <!-- '<Test><T>2021-08-09T17:31:30.748-05:00</T><SP>2500</SP><S>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</S></Test>'+ -->
+                        <!-- '<Test><T>2021-08-09T17:31:30.748-05:00</T><SP>2500</SP><S>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</S></Test>'+ -->
+                        <!-- '<Test><T>2021-08-09T17:31:30.748-05:00</T><SP>2500</SP><S>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</S></Test>'+ -->
+                        <!-- '<Test><T>2021-08-09T17:31:30.748-05:00</T><SP>2500</SP><S>483,504,525,553,588,616,644,672,686,714,735,756,777,784,791,791</S></Test>'+ -->
+                        <!-- '<Test><T>2021-08-09T17:31:30.748-05:00</T><SP>2500</SP><S>483,504,525,553,588,616,644,672,686,714,735,756,777,784,791,791</S></Test>'+ -->
+                        <!-- '</ABC><ABC></ABC><DT>2021-08-09T17:31:30.748-05:00</DT><DD>40000</DD></RS></Apple>'; -->
 
-                    var parser = new DOMParser();
-                    var parsedXmlDoc = parser.parseFromString(msg, ""text/xml"");
+                    <!-- var parser = new DOMParser(); -->
+                    <!-- var parsedXmlDoc = parser.parseFromString(msg, ""text/xml""); -->
 
-                    msg = null;
-                    parser = null;
-                    parsedXmlDoc = null;
+                    <!-- msg = null; -->
+                    <!-- parser = null; -->
+                    <!-- parsedXmlDoc = null; -->
 
-                    if (repeat)
-                    {
-                        key = setTimeout(_stress, duration, duration);
-                    }
-                };
+                    <!-- if (repeat) -->
+                    <!-- { -->
+                        <!-- key = setTimeout(_stress, duration, duration); -->
+                    <!-- } -->
+                <!-- }; -->
 
-                var stress = function(duration) {
-                    repeat = true;
-                    _stress(duration);
-                };
-                var destress = function() {
-                    repeat = false;
-                    clearTimeout(key);
-                };
-                stress(40);
+                <!-- var stress = function(duration) { -->
+                    <!-- repeat = true; -->
+                    <!-- _stress(duration); -->
+                <!-- }; -->
+                <!-- var destress = function() { -->
+                    <!-- repeat = false; -->
+                    <!-- clearTimeout(key); -->
+                <!-- }; -->
+                <!-- stress(40); -->
 		</script>
 	</head>
 	<body>
